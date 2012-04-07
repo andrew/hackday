@@ -1,0 +1,18 @@
+.page-header
+  %h1 Vote For your favourite hack
+
+= form_for @vote do |form|
+  - @hacks.each do |hack|
+    .row
+      .hack.well.span9
+        .row
+          .span1= form.radio_button :hack_id, :value => hack.id
+          .span4
+            %h2
+              = hack.name
+              %small
+                by
+                = hack.authors
+            = markdown hack.description
+            = link_to 'View', hack.url
+  

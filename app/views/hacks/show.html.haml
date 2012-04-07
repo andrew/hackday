@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @hack.name
+%p
+  %b Description:
+  = @hack.description
+%p
+  %b Authors:
+  = @hack.authors
+%p
+  %b Url:
+  = @hack.url
+
+= link_to 'Edit', edit_hack_path(@hack)
+\|
+= link_to 'Back', hacks_path

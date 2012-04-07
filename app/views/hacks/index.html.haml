@@ -1,0 +1,12 @@
+.page-header
+  %h1 Hacks
+
+- @hacks.each do |hack|
+  .hack.well
+    %h2
+      = hack.name
+      %small
+        by
+        = hack.authors
+    = markdown hack.description
+    = link_to 'View', hack.url
