@@ -6,4 +6,10 @@ class Hack
   field :url, :type => String
 
   validates_presence_of :name, :description, :authors
+  
+  has_many :votes
+  
+  def to_s
+    name
+  end
 end

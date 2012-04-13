@@ -1,5 +1,6 @@
 class Vote
   include Mongoid::Document
   field :email, :type => String
-  field :hack_id, :type => String
+
+  belongs_to :hack
 end

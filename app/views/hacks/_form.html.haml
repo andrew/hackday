@@ -2,10 +2,10 @@
   = f.error_notification
 
   .form-inputs
-    = f.input :name
-    = f.input :description
-    = f.input :authors
-    = f.input :url
+    = f.input :name, :placeholder => "What's it called?"
+    = f.input :description, :as => :text, :input_html => {:rows => 6}, :label => 'Description (markdown)'
+    = f.input :authors, :placeholder => "Who built it? (full names please)"
+    = f.input :url, :placeholder => "Optional but awesome"
 
   .form-actions
     = f.button :submit, :class => 'btn-primary'
