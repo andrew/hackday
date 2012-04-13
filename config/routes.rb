@@ -2,8 +2,7 @@ Hackday::Application.routes.draw do
   resources :hacks
   resources :votes
 
-  root :to => 'hacks#index'
-
-  # match '/results' => 'votes#results'
-  # root :to => 'votes#index'
+  match '/auth/:provider/callback', to: 'sessions#create'
+  match '/results' => 'votes#results', :as => :results
+  root :to => 'votes#index'
 end

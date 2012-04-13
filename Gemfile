@@ -9,6 +9,7 @@ gem 'inherited_resources'
 gem 'simple_form'
 gem "twitter-bootstrap-rails"
 gem 'redcarpet'
+gem 'thin'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -18,3 +19,4 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'omniauth-google-apps'

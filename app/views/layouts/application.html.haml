@@ -20,13 +20,6 @@
             %span.icon-bar
             %span.icon-bar
           %a.brand{:href => "/"}Hackday
-          .container-fluid.nav-collapse
-            %ul.nav.pull-right
-              %li
-                .btn-group
-                  = link_to new_hack_path, :class => 'btn' do
-                    %i.icon-plus
-                    Submit Hack
 
     .container-fluid
 
@@ -35,12 +28,14 @@
           .well
             %h3 What's a Hack?
             %p The Forward Developers have made software projects in just a single day.
+            %p Vote for your favourite project and the team with the most votes win an iPad.
+            %p Winners will be announced on Monday afternoon
             
         .span9
           = yield
     
       %footer
-        %p &copy; Company 2012
+        %p &copy; Forward 2012
     /
       Le javascript
       \==================================================

@@ -1,0 +1,7 @@
+%ul
+  - @hacks.sort_by{|h| h.votes.count}.reverse.each do |hack|
+    %li
+      %h2
+        = hack.name
+        %small
+          = pluralize hack.votes.count, 'vote'
