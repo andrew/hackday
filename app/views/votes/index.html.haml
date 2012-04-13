@@ -14,5 +14,5 @@
                 by
                 = hack.authors
             = markdown hack.description
-            = link_to('View', hack.url) if hack.url.present?
+            = link_to('View demo', hack.url, :class => 'btn btn-info', :style => 'color:#fff;') if hack.url.present?
   = form.submit 'Place Vote', :class => 'btn-primary btn-large'
